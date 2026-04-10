@@ -13,7 +13,7 @@ interface HabitStore {
     toggleDate: (habitId: number, date: Date) => void
 }
 
-export const useHabitStore = create<HabitStore>((set,get) => ({
+export const useHabitStore = create<HabitStore>((set) => ({
     habits:[],
     totalComplete:0,
     totalCount:0,

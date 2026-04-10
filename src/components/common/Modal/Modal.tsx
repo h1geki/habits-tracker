@@ -3,7 +3,6 @@ import styles from './Modal.module.css'
 import { useModalStore } from '../../../store/useModalStore'
 import Select from 'react-select'
 import { useHabitStore } from '../../../store/useHabitsStore'
-import type { Habit } from '../../../types/Habit'
 
 interface RegularityOption {
   value:string,
@@ -23,18 +22,16 @@ const Modal:React.FC = () => {
  
   const handleAddBtn = () =>{
     if(!selectedOption || !habitDescr || !habitTitle) return;
-    const newHabit:Habit = {
-      id: habits.length ? habits[habits.length-1].id +1 : 0,
-      title:habitTitle,
-      description:habitDescr,
-      regularity:selectedOption?.value,
-      complete:false
-    }
 
-    addHabit(newHabit)
-    setHabitDescr('')
-    setHabitTitle('')
-    toggleModal()
+  addHabit({
+    title: habitTitle,
+    description: habitDescr,
+    regularity: selectedOption.value,
+  })
+
+  setHabitDescr('')
+  setHabitTitle('')
+  toggleModal()
   }
 
   return (
