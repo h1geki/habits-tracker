@@ -15,7 +15,7 @@ const Modal:React.FC = () => {
     {value:'everyday', label:'Каждый день'}
   ]
   const {isModal, toggleModal} = useModalStore()
-  const {addHabit,habits} = useHabitStore()
+  const {addHabit} = useHabitStore()
   const [selectedOption,setSelectedOption] = useState<RegularityOption | null>(null)
   const [habitTitle,setHabitTitle] = useState<string>('')  
   const [habitDescr,setHabitDescr] = useState<string>('')  
