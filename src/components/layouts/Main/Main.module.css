@@ -1,0 +1,10 @@
+.main{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.mainWrapper{
+    max-width: 900px;
+    width: 100%;
+    padding-inline: 10px;
+}

@@ -1,0 +1,87 @@
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: fixed;
+}
+.modalContent{
+    width: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+.modalContent p{
+    font-weight: bold;
+}
+.modalContent label{
+    display: block;
+    margin: 14px 0px 10px 0px;
+    font-size: 14px;
+}
+.modalContentInputWrapper{
+    width: 100%;
+    background-color: #f3f3f5 ;
+    border-radius: 5px;
+}
+.modalContentInputWrapper input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 4px 7px;
+    border-radius: 5px;
+}
+/* .modalContentInputWrapper input:focus{
+    outline: solid lightgray;
+    border: 2px solid rgb(210, 196, 196);
+    
+} */
+.modalContentInputWrapper:focus-within {
+    outline: solid 2px lightgray;
+    box-shadow: -1px 1px 6px 7px rgba(34, 60, 80, 0.18);
+}
+.modalContent span{
+    display: block;
+    margin-top: 15px;
+    font-size: 13px;
+}
+.modalContentDroplist{
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color:  rgb(239, 232, 232);
+    background-color: #f3f3f5 ;
+    padding: 4px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    
+}
+
+.modalContentBtns{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.modalContentBtns button{
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    padding: 7px;
+    font-size: 12px;
+}
+
+.modalContentBtns button:last-child{
+    background-color: black;
+    color: white;
+}
+

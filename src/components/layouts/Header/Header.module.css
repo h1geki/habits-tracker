@@ -1,0 +1,50 @@
+.header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px 20px 0px;
+    border-bottom: 1px solid lightgrey;
+    background-color: white;
+    z-index: 10;
+
+}
+.headerWrapper{
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+.headerTitleBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.headerTitleBox h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+.headerTitleBox p{
+    color: var(--text);
+}
+.headerIcon{
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.headerBtnBox:hover{
+    opacity: 0.8;
+}
+
+@media (max-width:760px){
+    .headerTitleBox p {
+        display: none;
+    }
+}
